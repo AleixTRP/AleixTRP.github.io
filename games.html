@@ -10,18 +10,24 @@
 						<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 					<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 				<link rel="stylesheet" href="game.css"/>
+				<link rel="stylesheet" href="base.css"/>
 				<script>
 				
 				
+				let game_data;
 				
-				function game(data){
+				let current_room = 0;
+				let items_picked = [];
 				
-				console.log(data.rooms[0].name);
+				function game(data)
+				{
 				
+				game_data = data;
 				
+				document.getElementById("terminal").innerHTML = "<p><strong>¡Bienvenidos a ENTIerrame!</strong> El juego de terror definitivo.</p>";
+			
+				document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[0].name+". ¿Qué quieres hacer?</p>";
 				}
-				
-				
 				
 				fetch("https://aleixtrp.github.io/games.json").then(response => response.json()).then(data =>game(data));
 				
@@ -53,15 +59,16 @@
 			<main>
 		<article>
 	<h2>Artículo</h2>
+			<form>
+			<div id= "terminal"></div>
+			<input  type = "text" id="commands">
+			<input  type = "submit" value="Accion">
+			</form>
 </article>
 	<aside>
 		<h2>Lateral</h2>
 			</aside>
-				<form>
-				<div id= "terminal"></div>
-				<input  type = "text" id="commands">
-				<input  type = "submit" value="Accion">
-				</form>
+				
 				</main>
 					<footer>
 						<p>Aleix1R (c) <span id="footer-year">2022</span></p>
