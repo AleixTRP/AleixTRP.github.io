@@ -12,7 +12,7 @@
 	"items": [
 	{"id":"piedra","name":"Pedrusco mugroso","description":"Es una piedra sucia","pickable":true},
 	{"id":"bicicleta","name":"Bicicleta mugrosa","description" :"Algún alumno la abandonó","pickable":false}
-	]
+	],
 	
 	"doors":[
 	{"id":"principal","description":"Puerta de entrada ENTI","rooms":["parking","hall"]},
