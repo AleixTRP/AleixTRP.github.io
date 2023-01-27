@@ -26,7 +26,7 @@
 				
 				document.getElementById("terminal").innerHTML = "<p><strong>¡Bienvenidos a ENTIerrame!</strong> El juego de terror definitivo.</p>";
 			
-				document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[0].name+". ¿Qué quieres hacer?</p>";
+				document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Qué quieres hacer?</p>";
 				}
 				
 				fetch("https://aleixtrp.github.io/games.json").then(response => response.json()).then(data =>game(data));
