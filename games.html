@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 	<html>
 		<head>
@@ -36,26 +37,23 @@
 					document.getElementById("terminal").innerHTML += info;
 				}
 
-				function parseCommand(command)
-				{
-				
-					console.log("El comando",command);
-				
-				
-				switch (command)
-				{
+			function parseCommand (command)
+			{
+				console.log("El comando ", command);
+				switch (command){
 				case "ver":
 				terminal_out("<p>"+game_data.rooms[current_room].description+"</p>");
+			
+			
+					break;
+
+					default:
+					terminal_out("<p><strong>Error</strong>: "+command+" commando no encontrado</p>");
 
 
-				break;
-
-				default:
-				terminal_out("<p><strong>Error</strong>: "+command+"  No encontrado</p>");
-
-
-				}	
+				}
 			}
+				
 				
 				function parseInstruction(instruction)
 				{
@@ -66,28 +64,28 @@
 				}
 				
 				
-				function readAction()
-				{	
-				let input = document.getElementById("commands").value;
 				
-				
-				let data = input.trim().split(" ");
-				
-				if(data.length == 0 || instruction_trim == ""){
-					document.getElementById("terminal").innerHTML += "<p><strong>Error:</strong> escribe una instrucció</p>";
-					return;
-				
-				}
-				if(data.length == 1)
-				{  
-					parseCommand(data[0]);
-				}
-					else{
-					
-						parseCommand(data);
-					}
-				}
-			
+				function readAction ()
+{
+	let instruction = document.getElementById("commands").value;
+	let instruction_trim = instruction.trim();
+
+	let data = instruction_trim.split(" ");
+
+	if (data.length == 0 || instruction_trim == ""){
+		terminal_out("<p><strong>Error</strong>: escribe una instrucción</p>");
+		return;
+	}
+
+	if (data.length == 1){
+		parseCommand(data[0]);
+	}
+	else{
+		parseInstruction(data);
+	}
+
+}
+
 				
 				
 				
