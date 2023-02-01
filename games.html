@@ -32,10 +32,12 @@
 				fetch("https://aleixtrp.github.io/games.json").then(response => response.json()).then(data =>game(data));
 				
 				
+				function readAction()
+				{	
 				let input = document.getElementById("commands").value;
-				let commands = input.split(" ");
-				console.log(commands);
-				
+				let data = input.split(" ");
+				console.log(data);
+				}
 				
 				
 				
@@ -64,7 +66,7 @@
 			<form>
 			<div id= "terminal"></div>
 			<input  type = "text" id="commands">
-			<input  type = "submit" value="Accion">
+			<input  type = "submit" value="Accion" onclick="readAction(); return false;"/>
 			</form>
 </article>
 	<aside>
