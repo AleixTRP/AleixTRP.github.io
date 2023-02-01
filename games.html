@@ -32,7 +32,9 @@
 				fetch("https://aleixtrp.github.io/games.json").then(response => response.json()).then(data =>game(data));
 				
 				
-				
+				let input = document.getElementById("commands").value;
+				let commands = input.split(" ");
+				console.log(commands);
 				
 				
 				
