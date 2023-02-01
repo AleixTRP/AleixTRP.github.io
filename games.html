@@ -53,7 +53,7 @@
 				
 				let data = input.trim().split(" ");
 				
-				if(data.length == 0){
+				if(data.length == 0 || instruction_trim == ""){
 					document.getElementById("terminal").innerHTML += "<p><strong>Error:</strong> escribe una instrucció</p>";
 					return;
 				
