@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 	<html>
 		<head>
@@ -31,12 +30,31 @@
 				
 				fetch("https://aleixtrp.github.io/games.json").then(response => response.json()).then(data =>game(data));
 				
+				
+				function terminal_out (info)
+				{
+					document.getElementById("terminal").innerHTML += info;
+				}
+
 				function parseCommand(command)
 				{
 				
 					console.log("El comando",command);
 				
 				}
+				switch (command)
+				{
+				case "see":
+				terminal_out("<p>"+game_data.rooms[current_room].description+"</p>");
+
+
+				break;
+
+				default:
+				terminal_out("<p><strong>Error</strong>: "+command+"  No encontrado</p>");
+
+
+				}	
 				
 				function parseInstruction(instruction)
 				{
@@ -50,6 +68,7 @@
 				function readAction()
 				{	
 				let input = document.getElementById("commands").value;
+				
 				
 				let data = input.trim().split(" ");
 				

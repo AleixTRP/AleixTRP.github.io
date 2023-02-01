@@ -12,7 +12,7 @@
 			"name": "Hall de ENTI",
 			"description": "Hall donde estan los alumnos en los descansos",
 			"items": [ "arbol de navidad", "bote desinfectante" ],
-			"doors": [ "Secretaria", "Ciberseguridad", "Comedor" ],
+			"doors": [ "Secretaria", "Ciberseguridad", "Comedor" ]
 
 		},
 		{
