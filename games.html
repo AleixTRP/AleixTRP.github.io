@@ -31,13 +31,43 @@
 				
 				fetch("https://aleixtrp.github.io/games.json").then(response => response.json()).then(data =>game(data));
 				
+				function parseCommand(command)
+				{
+				
+				
+				
+				}
+				
+				function parseInstruction(instruction)
+				{
+				
+				
+				
+				
+				}
+				
 				
 				function readAction()
 				{	
 				let input = document.getElementById("commands").value;
+				
 				let data = input.split(" ");
-				console.log(data);
+				
+				if(data.length == 0){
+					document.getElementById("terminal").innerHTML += "<p><strong>Error:</strong> escribe una instrucció</p>";
+					return;
+				
 				}
+				if(data.length == 1
+				{  
+					parseCommand(data[0]);
+					}
+					else{
+					
+						parseCommand(data);
+					}
+				}
+			
 				
 				
 				
@@ -75,7 +105,7 @@
 				
 				</main>
 					<footer>
-						<p>Aleix1R (c) <span id="footer-year">2022</span></p>
+						<p>Aleix1RP (c) <span id="footer-year">2022</span></p>
 					<script>
 				document.getElementById("footer-year").innerHTML = new Date().getFullYear();
 			</script>
