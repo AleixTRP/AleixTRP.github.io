@@ -8,11 +8,18 @@
 			"doors": [ "principal", "salida" ]
 		},
 		{
+			"id": "principal",
+			"name": "Puerta principal",
+			"description": " Puerta principal de ENTI",
+			"items": [ "llave" ],
+			"doors": [ "hall", "salida", "parking" ]
+		},
+		{
 			"id": "hall",
 			"name": "Hall de ENTI",
 			"description": "Hall donde estan los alumnos en los descansos",
 			"items": [ "arbol de navidad", "bote desinfectante" ],
-			"doors": [ "Secretaria", "Ciberseguridad", "Comedor" ]
+			"doors": [ "Secretaria", "Ciberseguridad", "Comedor", "principal"]
 
 		},
 		{
