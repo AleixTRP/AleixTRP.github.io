@@ -34,14 +34,14 @@
 				function parseCommand(command)
 				{
 				
-				
+					console.log("El comando",command);
 				
 				}
 				
 				function parseInstruction(instruction)
 				{
 				
-				
+				console.log ("La instrucció",instruction);
 				
 				
 				}
@@ -51,7 +51,7 @@
 				{	
 				let input = document.getElementById("commands").value;
 				
-				let data = input.split(" ");
+				let data = input.trim().split(" ");
 				
 				if(data.length == 0){
 					document.getElementById("terminal").innerHTML += "<p><strong>Error:</strong> escribe una instrucció</p>";
