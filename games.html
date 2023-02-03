@@ -77,13 +77,13 @@ function getRoomNumber (room)
 	return -1;
 }
 
-function getDoorNumber (door)
-{
-	for (let i = 0; i < game_data.doors.length; i++){
-		if (game_data.doors[i].id == door){
-			return i;
+	function getDoorNumber (door)
+		{
+		for (let i = 0; i < game_data.doors.length; i++){
+			if (game_data.doors[i].id == door){
+				return i;
+			}
 		}
-	}
 
 	return -1;
 }
@@ -126,6 +126,29 @@ function getDoorNumber (door)
 			break;
 
 		case "coger":
+		
+			game_data.rooms[current_room].items.forEach(function(item){
+		
+			if(item == instruction[1]){
+				items_picked.push(item);
+			
+				let item_num = game_data.rooms[current_room].items.indexOf(item);
+				
+				if(item_num < 0){
+				
+				console.log("Error al borrar el item de la habitación");
+				return;
+				}
+					game_data.rooms[current_room].items.splice(item_num,1);
+					return;
+			
+			}
+		});
+		
+		
+		
+		
+		
 
 			break;
 
