@@ -29,7 +29,7 @@ Aquí almacenaremos la página web estática de la asignatura así como algunos 
  
  - [ ] Minitas
 
-ENTIérrame (Ejercicio final)
+## ENTIérrame (Ejercicio final)
 
 -¿Qué es HTML? ¿CSS? ¿Javascript?
 
