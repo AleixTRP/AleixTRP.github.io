@@ -41,8 +41,10 @@ CSS: Proviene de “Cascading Style Sheet”. Se trata de un lenguaje de estilo,
 JavaScript: es un lenguaje de programación que complementa HTML y CSS al proporcionar dinamismo e interactividad a las páginas web, así como la capacidad de procesar y transformar datos. También mencionar la utilidad de NodeJS para utilizar JavaScript en el back-end y crear aplicaciones escalables con conexiones simultáneas.
 
 -**¿Qué es el formato Markdown?**
+
 Markdown y su función como lenguaje de marcado para aplicar formato a un texto utilizando una serie de caracteres especiales. Aunque se pensó originalmente para simplificar la elaboración de textos destinados a la web, se puede usar en cualquier tipo de texto. En resumen, Markdown ofrece una forma más rápida y sencilla de aplicar formato a un texto sin necesidad de utilizar HTML directamente.
 
 -**¿Qué es el formato JSON? ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?**
+
 JSON (JavaScript Object Notation) es un formato de intercambio de datos ligero y fácil de leer y escribir que se utiliza para enviar datos entre aplicaciones web.
 Se pueden convertir objetos a JSON y al revés con estas funciones:de objeto a JSON JSON.stringify(objeto) y para convertir JSON a un objeto se utiliza la función JSON.parse(json).
