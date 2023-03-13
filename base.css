@@ -22,6 +22,7 @@ header{
 	align-content: flex-start;
 
 }
+
 nav{
 	
 	display:flex;
@@ -31,6 +32,8 @@ nav{
 
 main{
 	display:flex;
+	background-image: url("img/tree.jpg");
+     
 }
 aside{
 	flex-basis:25%;
