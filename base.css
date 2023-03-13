@@ -1,58 +1,29 @@
-font-family: 'Josefin Sans', sans-serif;
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	}
 	
-	
-}
-
-
-
-header,h1,nav,main,article, aside, footer{
-	padding:0px;
-	margin:0px;
-	border:1px solid black;
-}
-
-header{
-	display:flex;
-	align-content: flex-start;
-
-}
-
-nav{
-	
-	display:flex;
-
-
-}
-
-main{
-	display:flex;
-	background-image: url("img/tree.jpg");
-     
-}
-aside{
-	flex-basis:25%;
-	
-}
-article{
-	
-	flex-basis:75%;
-	
-}
-
-@media (max-width:600px){
-	
-	main{
-		flex-direction:column;
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		background: #252839;
 		
 	}
-	article{
-		flex-basis:100%;
-		
-	}
-	aside{
-		flex-basis:100%;
+	ul{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
 		
 	}
 	
+	ul,li{
+		position: relative;
+		list-style: none
+		
+	}
 	
-}
