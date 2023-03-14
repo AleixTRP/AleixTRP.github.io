@@ -1,8 +1,9 @@
 * {
 	
 	font-family: 'Poppins', sans-serif;
-	}
 	
+	}
+
 	body{
 		background: #252839;
 		
@@ -31,7 +32,94 @@ li {
   margin: 0 auto;
 }
 
-#Text_gif{
+#text_gif{
 	
 	text-align: center;
 }
+
+footer {
+  background-color: #252839;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 5px;
+  position: relative; 
+  width: 100%;
+  border-top: 1px solid #fff;
+  text-align: center;
+  margin-top: 50px; 
+}
+
+#redes-sociales-footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#redes-sociales-footer img {
+  width: 30px;
+  height: 30px;
+}
+
+#mano {
+  display: block;
+  margin: 0 auto; 
+  max-width: 50px; 
+  width: 100%; 
+}
+#enti {
+  display: block;
+  margin: 0 auto; 
+  max-width: 500px; 
+  width: 100%; 
+}
+
+#nav-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 20px;
+}
+
+a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #252839;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #252839;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin: 10px;
+}
+
+nav a {
+  padding: 10px 20px;
+  background-color: purple;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+
