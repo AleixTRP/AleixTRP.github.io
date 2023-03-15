@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de contacto</title>
+  <link rel="stylesheet"  href="cont.css">
+</head>
+<body>
+ <header>
+    <nav id="nav-links">
+      <ul>
+        <li><a href="index.html">Index</a></li>
+		<li><a href="presentacion.html">Presentacion</a></li>
+        <li><a href="exp_Hobbie.html">Hobbie</a></li>
+    </nav>
+  </header>
+  <h1>Contacto</h1>
+  <form onsubmit="return false;">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" required></textarea><br><br>
+    
+    <input type="submit" value="Enviar" onclick="showAlert()">
+	<script>
+    function showAlert() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+      var alertMessage = "Nombre: " + name + "\nCorreo electrónico: " + email + "\nMensaje: " + message + "\n\nEsto es un ejercicio de clase, no se va a enviar";
+      alert(alertMessage);
+    }
+  </script>
+  </form>
+  	  <footer>
+    <p>© Aleix Ramirez 2023</p>
+    <ul id="redes-sociales-footer">
+      <li><a href="https://www.instagram.com/Aleix1rp/"><img src="img/insta.png"></a></li>
+      <li><a href="https://www.linkedin.com/in/aleix1rp/"><img src="img/link.png"></a></li>
+      <li><a href="https://twitter.com/Ramperzz__"><img src="img/twit.png"></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+

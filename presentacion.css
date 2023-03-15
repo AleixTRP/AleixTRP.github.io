@@ -92,9 +92,6 @@ footer {
   width: 150px;
   text-align: center;
 }
-#presentacion {
-  border: 2px solid purple;
-}
 
 ul {
   display: flex;
@@ -139,6 +136,10 @@ nav a {
   color: white;
   text-decoration: none;
   
+}
+
+#presentacion {
+  border: 2px solid purple;
 }
 
 
