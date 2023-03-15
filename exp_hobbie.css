@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #252839;
+}
+
+header {
+  background-color: #B695C0;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}

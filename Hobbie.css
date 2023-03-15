@@ -2,21 +2,21 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-	}
 	
-	body{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 100vh;
-		background: #252839;
-		
-	}
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #252839;
+}
+
 h1 {
 	position: relative;
 	top: -400px;
-	left: 250px;
+	left: 500px;
 	justify-content: top;
 	font-size: 2em;
 	text-decoration: none;
@@ -24,31 +24,30 @@ h1 {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: transparent;
-	-webkit-text-stroke: 1px rgba(225,225,225,0.5);
-		
-	}
+	-webkit-text-stroke: 1px rgba(225,225,225,0.5);	
+	font-family: "Montserrat", sans-serif
+}
 
 section {
-display:flex;
-width: 600px;
-height: 430px;
-
+	display:flex;
+	width: 800px;
+	height: 430px;
+	margin-right: 300px;
+	clear: both;
 }
-section img{
+
+section img {
 	width: 0px;
 	flex-grow: 1;
 	object-fit: cover;
 	opacity: .8;
 	transition: .5s ease;
-
-	
 }
 
-section img:hover {
-	
+section img:hover {	
 	cursor: crosshair;
 	width: 300px;
 	opacity: 1;
 	filter: contrast(120%);
-	
 }
+
