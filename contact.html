@@ -1,8 +1,17 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html>
 <head>
   <title>Formulario de contacto</title>
   <link rel="stylesheet"  href="cont.css">
+  	<script>
+    function showAlert() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+      var alertMessage = "Nombre: " + name + "\nCorreo electrónico: " + email + "\nMensaje: " + message + "\n\nEsto es un ejercicio de clase, no se va a enviar";
+      alert(alertMessage);
+    }
+  </script>
 </head>
 <body>
  <header>
@@ -25,15 +34,7 @@
     <textarea id="message" name="message" required></textarea><br><br>
     
     <input type="submit" value="Enviar" onclick="showAlert()">
-	<script>
-    function showAlert() {
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var message = document.getElementById("message").value;
-      var alertMessage = "Nombre: " + name + "\nCorreo electrónico: " + email + "\nMensaje: " + message + "\n\nEsto es un ejercicio de clase, no se va a enviar";
-      alert(alertMessage);
-    }
-  </script>
+
   </form>
   	  <footer>
     <p>© Aleix Ramirez 2023</p>
