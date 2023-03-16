@@ -14,7 +14,7 @@ let game_data;
 				document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Qué quieres hacer?</p>";
 				}
 				
-				fetch("https://aleixtrp.github.io/games.json").then(response => response.json()).then(data =>game(data));
+				fetch("https://aleixtrp.github.io/game.json").then(response => response.json()).then(data =>game(data));
 				
 				
 				
@@ -42,6 +42,7 @@ function parseCommand (command)
 			}
 			terminal_out("<p>Puedes ir a: "+doors+"</p>");
 			break;
+		
 		case "inventario":
 		
 		if (items_picked.length == 0){
@@ -158,6 +159,6 @@ function parseInstruction (instruction) {
 
 }
 
-	fetch("https://aleixtrp.github.io/games.json")
+	fetch("https://aleixtrp.github.io/game.json")
 		.then(response => response.json())
 		.then(data => game(data));
