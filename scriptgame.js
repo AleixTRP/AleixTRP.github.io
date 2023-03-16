@@ -1,4 +1,4 @@
-let game_data;
+				let game_data;
 				
 				let current_room = 0;
 				let items_picked = [];
@@ -14,7 +14,7 @@ let game_data;
 				document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Qué quieres hacer?</p>";
 				}
 				
-				fetch("https://aleixtrp.github.io/game.json").then(response => response.json()).then(data =>game(data));
+				fetch("https://AleixTRP.github.io/game.json").then(response => response.json()).then(data =>game(data));
 				
 				
 				
@@ -129,7 +129,8 @@ function parseInstruction (instruction) {
 					return;
 			
 			}
-		});
+			});
+		
 		break;
 
 
@@ -159,6 +160,6 @@ function parseInstruction (instruction) {
 
 }
 
-	fetch("https://aleixtrp.github.io/game.json")
+	fetch("https://AleixTRP.github.io/game.json")
 		.then(response => response.json())
 		.then(data => game(data));
