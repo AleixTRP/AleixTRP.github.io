@@ -1,10 +1,8 @@
-
-				
-				
-				let game_data;
+let game_data;
 				
 				let current_room = 0;
 				let items_picked = [];
+				
 				
 				function game(data)
 				{
@@ -44,6 +42,18 @@ function parseCommand (command)
 			}
 			terminal_out("<p>Puedes ir a: "+doors+"</p>");
 			break;
+		case "inventario":
+		
+		if (items_picked.length == 0){
+        terminal_out("<p>No tienes ítems en el inventario</p>");
+		} else {
+        let items_list = "";
+        items_picked.forEach(function(item){
+            items_list += item+", ";
+        });
+        terminal_out("<p>Tienes los siguientes ítems en el inventario: "+items_list+"</p>");
+    }
+    break;
 
 		default:
 			terminal_out("<p><strong>Error</strong>: "+command+" commando no encontrado</p>");
@@ -76,41 +86,29 @@ function getRoomNumber (room)
 }
 
 
-	function parseInstruction (instruction)
-	{
+function parseInstruction (instruction) {
+  console.log("La instrucción ", instruction);
 
-	console.log("La instrucción ", instruction);
+  switch (instruction[0]){
+    case "ver":
+      break;
 
-	switch (instruction[0]){
-		case "ver":
+    case "ir":
+      if (instruction.length !== 2) {
+        console.log("Instrucción mal formada");
+        return;
+      }
 
-			break;
+      let roomName = instruction[1];
+      let roomNum = getRoomNumber(roomName);
+      if (roomNum < 0) {
+        console.log("Habitación errónea");
+        return;
+      }
 
-		case "ir":
-			let door_num = getDoorNumber(instruction[1]);
-			if (door_num < 0){
-				console.log("Puerta errónea");
-				return;
-			}
-
-			console.log("Door Num: ",door_num);
-
-			let room_num = getRoomNumber(game_data.doors[door_num].rooms[0]);
-			if (room_num < 0){
-				console.log("Habitación errónea");
-				return;
-			}
-
-			console.log("Room Num: ", room_num);
-
-			if (room_num == current_room){
-				current_room = getRoomNumber(game_data.doors[door_num].rooms[1]);
-			}
-			else{
-				current_room = room_num;
-			}
-
-			break;
+      current_room = roomNum;
+      terminal_out("<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Qué quieres hacer?</p>");
+      break;
 
 		case "coger":
 		
@@ -131,13 +129,7 @@ function getRoomNumber (room)
 			
 			}
 		});
-		
-		
-		
-		
-		
-
-			break;
+		break;
 
 
 		default:
@@ -166,14 +158,6 @@ function getRoomNumber (room)
 
 }
 
-	fetch("https://rafaenti.github.io/game.json")
+	fetch("https://aleixtrp.github.io/games.json")
 		.then(response => response.json())
 		.then(data => game(data));
-
-				
-				
-				
-				
-				
-				
-				
