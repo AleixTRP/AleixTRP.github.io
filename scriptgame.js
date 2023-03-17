@@ -71,6 +71,7 @@ function parseCommand(command) {
 				inventory += items_picked[i]+" ";
 			}
 			terminal_out("<p>En tu inventario hay: "+inventory+"</p>");
+			
 			break;
 
 		default:

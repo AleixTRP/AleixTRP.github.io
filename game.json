@@ -126,25 +126,25 @@
 			"name": "cuchillo",
 			"description": "Un cuchillo afilado",
 			"pickable": true
-		}
+		},
 		{
 			"id": "pelota",
 			"name": "pelota",
 			"description": "bota bota y en tu culo explota",
 			"pickable": true
-		}
+		},
 		{
 			"id": "justificantes",
 			"name": "justificantes",
 			"description": "para justificar faltas",
 			"pickable": true
-		}
+		},
 		{
 			"id": "silla",
 			"name": "silla",
 			"description": "para sentarse",
 			"pickable": false
-		}
+		},
 		{
 			"id": "llave",
 			"name": "llave",
