@@ -110,6 +110,7 @@ function getItemNumber(item)
 }
 
 
+
 function parseInstruction (instruction) {
   console.log("La instrucción ", instruction);
 

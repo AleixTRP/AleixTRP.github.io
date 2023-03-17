@@ -11,7 +11,7 @@
 			"id": "principal",
 			"name": "Puerta principal",
 			"description": "Puerta principal de ENTI",
-			"items": ["llave"],
+			"items": ["llave","cuchillo"],
 			"doors": ["hall", "salida", "parking"]
 		},
 		{
@@ -32,35 +32,35 @@
 			"id": "ciberseguridad",
 			"name": "Aula de Ciberseguridad de ENTI",
 			"description": "Si entras te doxean la IP",
-			"items": ["Flipper Zero", "pelota"],
+			"items": ["flipperzero", "pelota"],
 			"doors": ["hall", "salatecnica"]
 		},
 		{
 			"id": "comedor",
 			"name": "Comedor de ENTI",
 			"description": "Donde comen los alumnos",
-			"items": ["máquina expendedora", "vasos"],
+			"items": ["piedra","cuchillo"],
 			"doors": ["hall", "secretaria"]
 		},
 		{
 			"id": "salatecnica",
 			"name": "Sala Técnica de ENTI",
 			"description": "Donde se realizan los proyectos",
-			"items": ["pcs", "impresora", "arduino", "piezas de lego"],
+			"items": ["flipperzero","teclado"],
 			"doors": ["ciberseguridad", "aula1", "aula2"]
 		},
 		{
 			"id": "aula1",
 			"name": "Aula 1 de ENTI",
 			"description": "Aula donde se dan clases de diseño",
-			"items": ["pantalla", "mesadedibujo", "silla"],
+			"items": ["silla","librodetexto"],
 			"doors": ["salatecnica"]
 		},
 		{
 			"id": "aula2",
 			"name": "Aula 2 de ENTI",
 			"description": "Aula donde se dan clases de programación",
-			"items": ["pizarra", "silla", "mesa"],
+			"items": ["bolis","cablehdmi"],
 			"doors": ["salatecnica"]
 		}
 	],
@@ -87,44 +87,68 @@
 		},
 		{
 			"id": "botedesinfectante",
-			"name": "Bote desinfectante",
+			"name": "btedesinfectante",
 			"description": "¿Alguien usa eso?",
 			"pickable": true
 		},
 		{
 			"id": "flipperzero",
-			"name": "Flipper Zero",
+			"name": "flipperzero",
 			"description": "Esto hackea cosas",
 			"pickable": true
 		},
 		{
 			"id": "bolis",
-			"name": "Bolis",
+			"name": "bolis",
 			"description": "Siempre tienes que tener uno.",
 			"pickable": true
 		},
 		{
 			"id": "cablehdmi",
-			"name": "Cable HDMI",
+			"name": "cablehdmi",
 			"description": "Un cable HDMI para conectar la pantalla.",
 			"pickable": true
 		},
 		{
 			"id": "librodetexto",
-			"name": "Libro de texto",
+			"name": "librodetexto",
 			"description": "Un libro para estudiar",
 			"pickable": true
 		},
 		{
 			"id": "teclado",
-			"name": "Teclado",
+			"name": "teclado",
 			"description": "Un teclado mecánico para escribir más rápido",
 			"pickable": true
 		},
 		{
 			"id": "cuchillo",
-			"name": "Cuchillo",
+			"name": "cuchillo",
 			"description": "Un cuchillo afilado",
+			"pickable": true
+		}
+		{
+			"id": "pelota",
+			"name": "pelota",
+			"description": "bota bota y en tu culo explota",
+			"pickable": true
+		}
+		{
+			"id": "justificantes",
+			"name": "justificantes",
+			"description": "para justificar faltas",
+			"pickable": true
+		}
+		{
+			"id": "silla",
+			"name": "silla",
+			"description": "para sentarse",
+			"pickable": false
+		}
+		{
+			"id": "llave",
+			"name": "llave",
+			"description": "para abrir puertas",
 			"pickable": true
 		}
 
