@@ -153,11 +153,11 @@ function parseInstruction (instruction) {
 						items_picked.push(game_data.rooms[current_room].items.splice(item_num, 1));
 					}
 				});
-						terminal_out("<p><strong>"+item+"</strong> se añadió a tu inventario correctamente</p>");
+						terminal_out("<p><strong>"+item+"</strong> se añadió a tu inventario </p>");
 						return; 
 					}
 					else {
-						terminal_out("<p>El item que buscas no esta en este lugar o puede que ya lo hayas recogido, revisa tu inventario para estar seguro</p>");
+						terminal_out("<p>Ya tienes el item en el inventario o no esta en esta habitación</p>");
 						return; 
 					}
 				});
