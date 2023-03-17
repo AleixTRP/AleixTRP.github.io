@@ -1,16 +1,118 @@
-
-
-#terminal{
-	border:2px solid black;
-	min-width:240px;
-	min-height:120px;
-	max-height:120px;
-	overflow:scroll;
-	
+body {
+  background-color: #330033;
+  color: #fff;
+  font-family: 'Aboreto', sans-serif;
+  margin: 0;
 }
-body{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #252839;
+
+header {
+  background-color: #330033;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+#main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#main-menu li {
+ margin: 0 20px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+#main-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-menu a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+article {
+
+  padding: 20px;
+  border-radius: 10px;
+}
+
+aside {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #330033;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#redes-sociales-footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#redes-sociales-footer img {
+  width: 20px;
+  height: 20px;
+}
+
+#terminal {
+  background-color: #000;
+  color: #fff;
+  font-family: monospace;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#commands {
+  padding: 5px;
+  width: 80%;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #330033;
+  padding: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #330033;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.article-container {
+  width: 70%;
 }
