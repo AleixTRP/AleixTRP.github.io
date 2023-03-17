@@ -13,7 +13,7 @@
 	document.getElementById("terminal").innerHTML += "<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿Qué quieres hacer?</p>";
 	}
 				
-	fetch("https://AleixTRP.github.io/game.json").then(response => response.json()).then(data =>game(data));
+	
 				
 				
 				
