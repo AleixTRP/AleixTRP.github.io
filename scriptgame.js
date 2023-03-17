@@ -25,7 +25,7 @@
 
 	terminal.scrollTop = terminal.scrollHeight;
 					}
-
+ 
 function parseCommand(command) {
   console.log("El comando ", command);
 
